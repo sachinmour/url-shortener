@@ -1,0 +1,29 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "---",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.13.4",
+    "mongodb": "^2.1.6"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinmour/url-shortener.git"
+  },
+  "keywords": [
+    "url-shortener",
+    "freecodecamp",
+    "microservice"
+  ],
+  "author": "Sachin Mour",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sachinmour/url-shortener/issues"
+  },
+  "homepage": "https://github.com/sachinmour/url-shortener#readme"
+}
