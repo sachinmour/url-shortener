@@ -13,6 +13,12 @@ module.exports = function (app) {
 
     app.route('/:id')
         .get(function (req, res) {
+            console.log(req.params);
             give.search(res, req.params.id);
         });
+        
+    app.route('/')
+        .get(function(req, res) {
+            res.sendFile(process.cwd() + '/public/index.html');
+        })
 };
