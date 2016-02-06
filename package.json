@@ -28,5 +28,8 @@
   "bugs": {
     "url": "https://github.com/sachinmour/url-shortener/issues"
   },
-  "homepage": "https://github.com/sachinmour/url-shortener#readme"
+  "homepage": "https://github.com/sachinmour/url-shortener#readme",
+  "engines": {
+    "node": "4.2.4"
+  }
 }
