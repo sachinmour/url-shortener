@@ -27,12 +27,20 @@ module.exports = function() {
                 }
             });
         }
+        else {
+            res.json({error:"Invalid url submitted"});
+        }
     };
     
     this.search = function(res, id) {
         Url.findById(Number(id), function(err, doc) {
             if(err) throw err;
-            res.redirect(doc.url);
+            if (doc) {
+                res.redirect(doc.url);
+            }
+            else {
+                res.json({error:"No short url found for given input"});
+            }
         });
     };
 };
