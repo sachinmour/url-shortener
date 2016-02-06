@@ -5,7 +5,10 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.13.4",
-    "mongodb": "^2.1.6"
+    "mongodb": "^2.1.6",
+    "mongoose": "^4.4.2",
+    "mongoose-auto-increment": "^5.0.1",
+    "valid-url": "^1.0.9"
   },
   "devDependencies": {},
   "scripts": {
