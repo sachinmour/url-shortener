@@ -10,15 +10,14 @@ module.exports = function (app) {
             var base = req.headers['x-forwarded-proto'] + '://' + req.headers.host.split(':')[0];
             give.new(base, res, req.params.url);
         });
-
-    app.route('/:id')
-        .get(function (req, res) {
-            console.log(req.params);
-            give.search(res, req.params.id);
-        });
         
     app.route('/')
         .get(function(req, res) {
             res.sendFile(process.cwd() + '/public/index.html');
-        })
+        });
+        
+    app.route('/:id(\\d+)')
+        .get(function (req, res) {
+            give.search(res, req.params.id);
+        });
 };
